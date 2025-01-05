@@ -1,3 +1,4 @@
+import 'package:clone_instagram/page/main_page.dart';
 import 'package:clone_instagram/page/splash_page.dart';
 import 'package:flutter/material.dart';
 
@@ -14,6 +15,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       routes: {
         '/': (context) => const SplashPage(),
+        '/main': (context) => const MainPage(),
       },
     );
   }
