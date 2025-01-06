@@ -1,6 +1,7 @@
 import 'package:clone_instagram/theme.dart';
 import 'package:clone_instagram/widgets/custom_button.dart';
 import 'package:clone_instagram/widgets/custom_text_form_field.dart';
+import 'package:clone_instagram/widgets/dividing_line.dart';
 import 'package:flutter/material.dart';
 
 class SignUpPage extends StatefulWidget {
@@ -92,7 +93,33 @@ class _SignUpPageState extends State<SignUpPage> {
                   if (passwordController.text ==
                       confirmPasswordController.text) {}
                 },
-              )
+              ),
+              const StraightLine(
+                title: "OR",
+                margin: EdgeInsets.symmetric(vertical: 30, horizontal: 40),
+              ),
+              CustomButton(
+                title: "Sign Up Google",
+                iconName: "assets/google.png",
+                bgColor: kWhiteColor,
+                borderColor: kBlackColor,
+                textColor: kBlackColor,
+                margin: const EdgeInsets.only(bottom: 10),
+                onPressd: () {
+                  if (formKey.currentState!.validate()) {}
+                },
+              ),
+              CustomButton(
+                title: "Sign Up Apple",
+                iconName: "assets/apple.png",
+                bgColor: kBlackColor,
+                borderColor: kBlackColor,
+                textColor: kWhiteColor,
+                margin: const EdgeInsets.only(bottom: 150),
+                onPressd: () {
+                  if (formKey.currentState!.validate()) {}
+                },
+              ),
             ],
           )),
     );

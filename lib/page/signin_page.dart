@@ -3,6 +3,7 @@ import 'package:clone_instagram/page/signup_page.dart';
 import 'package:clone_instagram/theme.dart';
 import 'package:clone_instagram/widgets/custom_button.dart';
 import 'package:clone_instagram/widgets/custom_text_form_field.dart';
+import 'package:clone_instagram/widgets/dividing_line.dart';
 import 'package:flutter/material.dart';
 
 class SignInPage extends StatefulWidget {
@@ -116,6 +117,10 @@ class _SignInPageState extends State<SignInPage> {
                 );
                 // if (formKey.currentState!.validate()) {}
               },
+            ),
+            const StraightLine(
+              title: "OR",
+              margin: EdgeInsets.symmetric(vertical: 30, horizontal: 40),
             ),
             CustomButton(
               title: "Sign Up Google",
