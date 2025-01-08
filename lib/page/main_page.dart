@@ -1,4 +1,5 @@
 import 'package:clone_instagram/page/home_page.dart';
+import 'package:clone_instagram/page/profile_page.dart';
 import 'package:clone_instagram/theme.dart';
 import 'package:flutter/material.dart';
 
@@ -10,7 +11,7 @@ class MainPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: kWhiteColor,
       body: const Center(
-        child: HomePage(),
+        child: ProfilePage(),
       ),
       bottomNavigationBar: const BottomNavBar(),
     );
